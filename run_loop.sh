@@ -23,17 +23,9 @@ for i in {1..5}
 do
     echo "🚀 Starting Run #$i..."
     
-    # LOGIC: If 'ans_best' exists, pass it to python. If not, pass nothing.
-    if [ -f "ans_best" ]; then
-        # Warm Start Mode
-        PYTHONIOENCODING=utf-8 $PYTHON_CMD solver.py ans_best > output.txt
-    else
-        # Cold Start Mode (First run)
-        PYTHONIOENCODING=utf-8 $PYTHON_CMD solver.py > output.txt
-    fi
     # Run the python script
     # Add PYTHONIOENCODING=utf-8 before the command
-    # PYTHONIOENCODING=utf-8 $PYTHON_CMD solver.py > output.txt
+    PYTHONIOENCODING=utf-8 $PYTHON_CMD solver.py > output.txt
     
     # Extract the score (looks for "Final Best Score: 3.8123")
     # Grep for "Grade:", take the last occurrence, and print the 3rd word from the end
