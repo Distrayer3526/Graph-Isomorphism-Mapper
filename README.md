@@ -108,7 +108,7 @@ Where $x$ is the ratio of mapped edges to total edges ($Score / M$).
 
 ## 📂 File Structure
 
-*   `solver_final_v3.py`: The main executable containing the complete logic.
+*   `solver.py`: The main executable containing the complete logic.
     *   `precompute_structures()`: WL Kernel & Eigenvector logic.
     *   `solve_instance()`: The worker thread logic (Construction + Repair).
     *   `solve_max_clique_heuristic()`: Helper for Association Graph repair.
