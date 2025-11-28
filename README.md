@@ -63,10 +63,10 @@ The solver expects a file named `graphs` in the root directory, or it can read f
 
 ```bash
 # Standard run (180 seconds default)
-python solver_final_v3.py
+python solver.py
 
 # Run with a warm start file (previous best solution)
-python solver_final_v3.py my_previous_answer.txt
+python solver.py best_ans
 ```
 You can also run the file for multiple iterations easily using the bash scripts provided.
 
